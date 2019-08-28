@@ -77,6 +77,7 @@ print("Be quick! The dragon just saw you!")
 print("The time for action is now, which way will you run?")
 print()
 sleep(delay)
+#End of the story, thanks!
 
 
 #########################################################################################################
