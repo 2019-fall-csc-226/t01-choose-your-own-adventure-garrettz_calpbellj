@@ -1,6 +1,6 @@
 ######################################################################
-# Author: Scott Heggen       TODO: Change this to your names
-# Username: heggens               TODO: Change this to your usernames
+# Author: Zyshavia Garrett and Jeremy Campbell
+# Username: Garrettz and CampbellJ
 #
 # Assignment: T01: Choose Your Own Adventure
 #
@@ -66,11 +66,41 @@ if dead == True:
     quit()
 
 #########################################################################################################
-# TODO Add your part of the story here. Keep in mind you may NOT be coming right after the example above.
+print()
+print("Welcome,", username, ",to the forgotten island!")
+sleep(delay)
+print("Before you can get rescued, you have to defeat a deadly dragon.")
+print("In one direction, there will be a weapon to slay the dragon. The other direction will lead to a certain demise.")
+print()
+sleep(delay * 2)
+print("Be quick! The dragon just saw you!")
+print("The time for action is now, which way will you run?")
+print()
+sleep(delay)
 
 
+#########################################################################################################
 
-# TODO Don't forget to check if your user is dead at the end of your chapter!
+direction = input("Which direction would you like to go? [Right/Forwards/Backwards/Left]" )
+
+if direction == "Right":
+    # Good Choice!
+    print("You rush into the nearby trees for cover. There you find a mystical coconut that will slay the dragon.")
+    sleep(delay)
+elif direction == "Forwards":
+    # Bad Choice
+    print("You have decided to run towards the dragon. The dragon scoffs and burns you to a crisp.")
+    dead = True
+    sleep(delay)
+else:
+    # Oh...Bad Choice
+    print("You just got eaten by man-eating roaches!")
+    sleep(delay)
+    ptint("Try to pick another direction to follow!")
+
+if dead == True:
+    print("Oh no! You died. Better luck next time! Try again by hitting the green play button.")
+    quit()
 
 
 #########################################################################################################
