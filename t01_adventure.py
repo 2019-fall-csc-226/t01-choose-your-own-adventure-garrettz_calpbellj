@@ -100,6 +100,7 @@ elif direction == "Forwards":
         print("You have decided to run towards the dragon. The dragon scoffs and burns you to a crisp.")
         dead = True
         sleep(delay)
+        #Finished!
 else:
     # Oh...Bad Choice
     print("You just got eaten by man-eating roaches!")
