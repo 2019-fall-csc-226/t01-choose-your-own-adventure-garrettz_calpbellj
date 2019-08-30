@@ -84,20 +84,27 @@ sleep(delay)
 
 direction = input("Which direction would you like to go? [Right/Forwards/Backwards/Left]" )
 
+
 if direction == "Right":
     # Good Choice!
     print("You rush into the nearby trees for cover. There you find a mystical coconut that will slay the dragon.")
     sleep(delay)
 elif direction == "Forwards":
     # Bad Choice
-    print("You have decided to run towards the dragon. The dragon scoffs and burns you to a crisp.")
-    dead = True
-    sleep(delay)
+    # print("You almost made a bad choice! The dragon hasn't seen you yet! Pick a number.")
+    integer = input("You have made a bad choice! You have one more chance to avoid being burnt alive. Pick a number. [1,2]" )
+    if integer == 1:
+        print("You have saved yourself and spared yourself from the dragon!")
+    elif integer == 2:
+        print("You failed to make a better decision and gave the dragon time to get the BBQ sauce.")
+        print("You have decided to run towards the dragon. The dragon scoffs and burns you to a crisp.")
+        dead = True
+        sleep(delay)
 else:
     # Oh...Bad Choice
     print("You just got eaten by man-eating roaches!")
     sleep(delay)
-    ptint("Try to pick another direction to follow!")
+    print("Try to pick another direction to follow!")
 
 if dead == True:
     print("Oh no! You died. Better luck next time! Try again by hitting the green play button.")
