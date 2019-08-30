@@ -92,7 +92,7 @@ if direction == "Right":
 elif direction == "Forwards":
     # Bad Choice
     # print("You almost made a bad choice! The dragon hasn't seen you yet! Pick a number.")
-    integer = input("You have made a bad choice! You have one more chance to avoid being burnt alive. Pick a number. [1,2]" )
+    integer = int(input("You have made a bad choice! You have one more chance to avoid being burnt alive. Pick a number. [1,2]") )
     if integer == 1:
         print("You have saved yourself and spared yourself from the dragon!")
     elif integer == 2:
